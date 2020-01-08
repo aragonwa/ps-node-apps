@@ -1,0 +1,40 @@
+{
+  "name": "ps-node-apps",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "DEBUG=app nodemon app.js",
+    "lint": "eslint app.js"
+  },
+  "keywords": [],
+  "author": "Alex Aragon <aragonwa@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^4.4.1",
+    "chalk": "^3.0.0",
+    "debug": "^4.1.1",
+    "ejs": "^3.0.1",
+    "express": "^4.17.1",
+    "jquery": "^3.4.1",
+    "morgan": "^1.9.1",
+    "nodemon": "^2.0.2",
+    "pug": "^2.0.4"
+  },
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.19.1"
+  },
+  "nodemonConfig": {
+    "restartable": "rs",
+    "ignore": [
+      "node_modules/**/node_moudles"
+    ],
+    "delay": "2500",
+    "env": {
+      "NODE_ENV": "development",
+      "PORT": 4000
+    }
+  }
+}
